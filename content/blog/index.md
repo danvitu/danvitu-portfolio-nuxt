@@ -1,8 +1,7 @@
 ---
-description: 'List of all my recent blog posts'
+description: "Список моих постов"
 ---
-# Blog Posts
 
-This is the list of my recent blog posts
+# Блог
 
 ::blog-posts

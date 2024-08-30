@@ -1,25 +1,20 @@
 <template>
   <div class="flex space-x-2 items-center">
-    <div class="text-gray-500 text-xs" v-if="showNextModeLabel">Change to {{ nextMode }}</div>
-    <button @click="toggleMode" @mouseenter="showNextModeLabel = true" @mouseleave="showNextModeLabel = false"
-      class="hover:bg-gray-200 dark:hover:bg-gray-600 px-2 py-1 text-4xl text-gray-500 md:text-base">{{ nextModeIcon }}</button>
+    <button @click="toggleMode" class="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl">
+      <LucideSun v-if="nextMode === 'light'" />
+      <LucideMoon v-if="nextMode === 'dark'" />
+      <LucideSunMoon v-if="nextMode === 'system'" />
+    </button>
   </div>
 </template>
 
 <script setup>
-const showNextModeLabel = ref(false)
 const colorMode = useColorMode()
 const modes = [
   'system',
   'light',
   'dark'
 ]
-
-const nextModeIcons = {
-  system: '🌓',
-  light: '🌕',
-  dark: '🌑'
-}
 
 const nextMode = computed(() => {
   const currentModeIndex = modes.indexOf(colorMode.preference)
@@ -33,5 +28,4 @@ const nextMode = computed(() => {
 })
 
 const toggleMode = () => colorMode.preference = nextMode.value
-const nextModeIcon = computed(() => nextModeIcons[nextMode.value])
 </script>

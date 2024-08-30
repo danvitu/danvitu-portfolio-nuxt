@@ -1,17 +1,23 @@
 <template>
   <nav class="font-mono">
-    <ul class="flex flex-col md:flex-row md:space-x-4">
+    <ul class="flex md:gap-4">
       <li>
-        <NuxtLink to="/" class="link">Main</NuxtLink>
+        <NuxtLink to="/projects" class="link">
+          <LucideFolderKanban />
+          <p>Проекты</p>
+        </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/about" class="link">About</NuxtLink>
+        <NuxtLink to="/blog" class="link">
+          <LucideNotepadText />
+          <p>Блог</p>
+        </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/projects" class="link">Projects</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/blog" class="link">Blog</NuxtLink>
+        <NuxtLink to="/uses" class="link">
+          <LucidePcCase />
+          <p>Uses</p>
+        </NuxtLink>
       </li>
     </ul>
   </nav>
@@ -19,6 +25,6 @@
 
 <style scoped>
 .link {
-  @apply p-1 hover:bg-gray-100 dark:hover:bg-gray-800 text-2xl md:text-base
+  @apply p-2 flex gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl
 }
 </style>

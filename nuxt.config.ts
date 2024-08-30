@@ -13,6 +13,8 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxt/content",
     "@nuxt/image",
+    "nuxt-lucide-icons",
+    "@nuxt/icon",
   ],
   content: {
     highlight: {
