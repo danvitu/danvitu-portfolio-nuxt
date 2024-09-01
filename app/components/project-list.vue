@@ -20,12 +20,6 @@
 defineProps({
   repos: {
     type: Array,
-  },
-  status: {
-    type: String
-  },
-  error: {
-    type: String
   }
 })
 </script>

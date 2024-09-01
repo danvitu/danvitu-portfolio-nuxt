@@ -1,5 +1,5 @@
 ---
-publishedAt: 2024-08-30
+publishedAt: 2024-08-31
 toc: true
 ---
 # Что я использую в работе

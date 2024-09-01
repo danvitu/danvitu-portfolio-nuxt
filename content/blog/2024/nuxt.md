@@ -1,5 +1,5 @@
 ---
-publishedAt: 2024-08-30
+publishedAt: 2024-09-01
 toc: true
 ---
 # Nuxt

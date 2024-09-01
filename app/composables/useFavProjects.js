@@ -3,7 +3,7 @@ const repos = ref([
     id: 1,
     name: "Personal site",
     description: "Мой сайт-портфолио",
-    homepage: "",
+    homepage: "/",
     html_url: "https://github.com/danvitu/danvitu-portfoilio-nuxt",
   },
   {

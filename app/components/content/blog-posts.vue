@@ -1,62 +1,34 @@
 <template>
-  <slot :posts="posts">
-    <section class="not-prose font-mono">
-      <div class="column text-gray-400 text-sm">
-        <div>дата</div>
-        <div>заголовок</div>
-      </div>
-      <ul>
-        <li v-for="post in posts" :key="post._path">
-          <NuxtLink :to="post._path" class="column hover:bg-gray-100 dark:hover:bg-gray-800">
-            <div
-              :class="{ 'text-transparent': !post.displayYear, 'text-gray-400 dark:text-gray-500': post.displayYear }">
-              {{ post.year }}</div>
-            <div>{{ post.title }}</div>
-          </NuxtLink>
-        </li>
-      </ul>
-    </section>
-  </slot>
+  <section class="not-prose font-mono">
+    <div class="column  text-gray-400 text-sm ">
+      <div class="mr-10">дата</div>
+      <div>заголовок</div>
+    </div>
+    <ul>
+      <li v-for="post in posts" :key="post._path">
+        <NuxtLink :to="post._path" class="column hover:bg-gray-100 dark:hover:bg-gray-800">
+          <div class="text-gray-500">{{ dateConvert(post.publishedAt) }}</div>
+          <div>{{ post.title }}</div>
+        </NuxtLink>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script setup>
-const props = defineProps({
-  limit: {
-    type: Number,
-    default: null
-  }
-})
-
-const { data } = await useAsyncData('blog-list',
-  () => {
-    const query = queryContent('/blog')
-      .where({ _path: { $ne: '/blog' } })
-      .only(['title', '_path', 'publishedAt'])
-      .sort({ publishedAt: -1 })
-
-    if (props.limit) {
-      query.limit(props.limit)
-    }
-    return query.find()
-  }
+const { data: posts } = await useAsyncData('blog-list',
+  () => queryContent('/blog')
+    .where({ _path: { $ne: '/blog' } })
+    .only(['title', '_path', 'publishedAt'])
+    .sort({ publishedAt: -1 })
+    .find()
 )
-
-const posts = computed(() => {
-  if (!data.value) {
-    return []
-  }
-  const result = []
-  let lastYear = null
-  for (const post of data.value) {
-    const year = new Date(post.publishedAt).getFullYear()
-    const displayYear = year !== lastYear
-    post.displayYear = displayYear
-    post.year = year
-    result.push(post)
-    lastYear = year
-  }
-  return result
+const dateConvert = (date) => new Date(date).toLocaleDateString('ru-RU', {
+  year: '2-digit',
+  day: 'numeric',
+  month: 'numeric'
 })
+
 </script>
 
 <style scoped>
