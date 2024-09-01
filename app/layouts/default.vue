@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto max-w-3xl p-2">
+  <div class="container mx-auto max-w-4xl p-2">
     <header class="flex justify-between items-center mt-5">
       <div class="flex items-center md:space-x-12">
         <div class="p-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-xl">
