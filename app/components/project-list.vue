@@ -1,19 +1,18 @@
 <template>
-  <div class="not-prose">
-    <section>
-      <ul class="grid grid-cols-1 gap-4">
-        <li v-for="repository in repos" class="border bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-800 rounded-xl p-4 font-mono"
-          :key="repository.id">
-          <div class="font-semibold">{{ repository.name }}</div>
-          <p v-if="repository.description" class="text-sm">{{ repository.description }}</p>
-          <div class="flex gap-4 flex-wrap ">
-            <a v-if="repository.homepage" class="link" :href="repository.homepage" target="_blank">App</a>
-            <a v-if="repository.html_url" class="link" :href="repository.html_url" target="_blank">Code</a>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </div>
+  <section class="not-prose">
+    <ul class="grid grid-cols-1 gap-4">
+      <li v-for="repository in repos"
+        class="border bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-800 rounded-xl p-4 font-mono"
+        :key="repository.id">
+        <div class="font-semibold">{{ repository.name }}</div>
+        <p v-if="repository.description" class="text-sm">{{ repository.description }}</p>
+        <div class="flex gap-4 flex-wrap ">
+          <a v-if="repository.homepage" class="link" :href="repository.homepage" target="_blank">App</a>
+          <a v-if="repository.html_url" class="link" :href="repository.html_url" target="_blank">Code</a>
+        </div>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script setup>

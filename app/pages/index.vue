@@ -3,7 +3,7 @@
     <h1 class="mb-0">Привет 👋, меня зовут Даниил </h1>
     <p>Я разрабатываю веб-приложения и сайты на <strong>Vue / Nuxt</strong></p>
     <div
-      class="not-prose grid grid-cols-1 md:grid-cols-3 gap-y-4 rounded-2xl p-4 max-w-md bg-gray-50 dark:bg-gray-800 dark:text-white">
+      class="not-prose grid grid-cols-2 md:grid-cols-3 gap-y-4 rounded-2xl p-4 max-w-md bg-gray-50 dark:bg-gray-800 dark:text-white">
       <SocialLinks />
     </div>
     <h2>Избранные проекты</h2>
@@ -14,7 +14,6 @@
 </template>
 
 <script setup>
-
 useSeoMeta({
   title: 'Главная',
   ogTitle: 'Главная',
@@ -22,13 +21,11 @@ useSeoMeta({
   ogImage: '[og:image]',
   ogUrl: '[og:url]',
 })
-
 useHead({
   htmlAttrs: {
     lang: 'ru'
   },
 })
-
 const { repos } = useFavProjects()
 </script>
 

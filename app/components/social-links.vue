@@ -15,6 +15,6 @@
 
 <style scoped>
 .social-link {
-  @apply flex gap-2 items-center w-max rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 p-1
+  @apply flex gap-2 items-center w-max rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 p-2
 }
 </style>
