@@ -1,9 +1,9 @@
 <template>
   <article class="box-border prose dark:prose-invert max-w-none">
-    <h1 class="mb-0">Привет 👋 Меня зовут Даниил</h1>
-    <p>Я разрабатываю веб-приложения и сайты на Vue / Nuxt</p>
+    <h1 class="mb-0">Привет 👋, меня зовут Даниил </h1>
+    <p>Я разрабатываю веб-приложения и сайты на <strong>Vue / Nuxt</strong></p>
     <div
-      class="not-prose grid grid-cols-3 gap-y-4 rounded-2xl p-4 max-w-sm bg-gray-50 dark:bg-gray-800 dark:text-white">
+      class="not-prose grid grid-cols-1 md:grid-cols-3 gap-y-4 rounded-2xl p-4 max-w-md bg-gray-50 dark:bg-gray-800 dark:text-white">
       <div class="flex gap-2 items-center">
         <Icon name="logos:github-icon" size="1.2rem" />
         <a href="https://github.com/danvitu">GitHub</a>
@@ -18,9 +18,8 @@
       </div>
     </div>
     <h2>Избранные проекты</h2>
-    <FavProjects />
-    <p>Посмотреть <NuxtLink to="/projects">все проекты</NuxtLink>
-    </p>
+    <ProjectList :repos="repos" />
+    <p>Посмотреть <NuxtLink to="/projects">все проекты</NuxtLink></p>
     <h2>Недавние записи в блоге</h2>
     <LatestBlogPosts :limit="3" />
     <p>Посмотреть <NuxtLink to="/blog">все записи в блоге</NuxtLink>
@@ -29,7 +28,6 @@
 </template>
 
 <script setup>
-
 
 useSeoMeta({
   title: 'Главная',
@@ -45,4 +43,11 @@ useHead({
   },
 })
 
+const { repos } = useFavProjects()
 </script>
+
+<style scoped>
+strong {
+  color: #00DC82
+}
+</style>

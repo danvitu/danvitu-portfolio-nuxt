@@ -2,7 +2,7 @@
   <div class="container mx-auto max-w-3xl p-2">
     <header class="flex justify-between items-center mt-5">
       <div class="flex items-center md:space-x-12">
-        <div class="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl">
+        <div class="p-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-xl">
           <NuxtLink to="/">
             <LucideHouse />
           </NuxtLink>
@@ -19,8 +19,8 @@
     <footer>
       <nav
         class="flex flex-col items-center md:flex-row gap-2 justify-between border-t py-8 px-2 mt-12 text-gray-600 dark:text-gray-400">
-        <div class="flex gap-1 text-gray-500">
-          <LucideCopyright />
+        <div class="flex gap-1 items-center text-gray-500 ">
+          <LucideCopyright size="1rem" />
           <p>2024 Daniil Vitushkin</p>
         </div>
         <ul class="flex gap-4">

@@ -1,6 +1,6 @@
 <template>
-  <nav class="font-mono">
-    <ul class="flex md:gap-4">
+  <nav>
+    <ul class="flex flex-row md:gap-4 font-mono">
       <li>
         <NuxtLink to="/projects" class="link">
           <LucideFolderKanban />
@@ -25,6 +25,6 @@
 
 <style scoped>
 .link {
-  @apply p-2 flex gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl
+  @apply p-2 flex gap-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-xl
 }
 </style>

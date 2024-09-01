@@ -1,6 +1,6 @@
 <template>
   <div class="flex space-x-2 items-center">
-    <button @click="toggleMode" class="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl">
+    <button @click="toggleMode" class="p-2 hover:bg-gray-2npn00 dark:hover:bg-gray-800 rounded-xl">
       <LucideSun v-if="nextMode === 'light'" />
       <LucideMoon v-if="nextMode === 'dark'" />
       <LucideSunMoon v-if="nextMode === 'system'" />
