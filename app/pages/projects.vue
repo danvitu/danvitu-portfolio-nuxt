@@ -1,11 +1,11 @@
 <template>
-  <div class="prose">
+  <div class="prose dark:prose-invert">
     <section v-if="status === 'pending'">Загрузка...</section>
     <section v-else-if="status === 'error'">
       <p>Что-то пошло не так... Попробуйте снова</p>
       <p>{{ error }}</p>
     </section>
-    <section v-else>
+    <section v-else class="">
       <h1>Проекты</h1>
       <ProjectList :repos="repos" />
     </section>
