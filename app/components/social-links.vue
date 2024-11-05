@@ -9,7 +9,7 @@
   </a>
   <a href="https://bsky.app/profile/danvitu9.bsky.social" class="social-link">
     <Icon name="logos:bluesky" />
-    <p>BlueSky</p>
+    <p>Bluesky</p>
   </a>
 </template>
 

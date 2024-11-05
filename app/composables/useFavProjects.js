@@ -1,15 +1,15 @@
 const repos = ref([
   {
     id: 1,
-    name: "Personal site",
+    name: "Мой сайт-портфолио",
     description: "Мой сайт-портфолио",
     homepage: "/",
     html_url: "https://github.com/danvitu/danvitu-portfoilio-nuxt",
   },
   {
     id: 2,
-    name: "CBT Assistant",
-    description: "КПТ Ассистент (в разработке)",
+    name: "КПТ Ассистент (в разработке)",
+    description: "Помощник npm",
   },
   {
     id: 3,

@@ -10,9 +10,7 @@ export default defineNuxtConfig({
   },
   modules: [
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode",
     "@nuxt/content",
-    "nuxt-lucide-icons",
     "@nuxt/icon",
   ],
   content: {
@@ -21,9 +19,6 @@ export default defineNuxtConfig({
         default: "catppuccin-macchiato",
       },
     },
-  },
-  colorMode: {
-    classSuffix: "",
   },
   nitro: {
     prerender: {
