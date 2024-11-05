@@ -9,9 +9,8 @@
 
 ## Software
 - Ubuntu 24.04, Win 10 
-- Visual Studio Code (Fira Code, Catppuccin Latte / Macchiato)
-- Chrome
-- Telegram, Discord
+- Visual Studio Code (Fira Code, Catppuccin Latte / Macchiato), Zed
+- Firefox, Zen
 - Obsidian
 - Spotify
 - Photoshop, Lightroom, DaVinci Resolve

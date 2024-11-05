@@ -2,7 +2,6 @@
 publishedAt: 2024-08-06
 toc: true
 ---
-
 # Введение во Vue 3
 
 ![Vue 3 Introduction](/images/vue-logo.png)

@@ -7,9 +7,9 @@
     <Icon name="logos:telegram" />
     <p>Telegram</p>
   </a>
-  <a href="" class="social-link">
-    <Icon name="logos:discord-icon" size="0.8rem" />
-    <p>Discord</p>
+  <a href="https://bsky.app/profile/danvitu9.bsky.social" class="social-link">
+    <Icon name="logos:bluesky" />
+    <p>BlueSky</p>
   </a>
 </template>
 
