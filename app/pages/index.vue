@@ -17,7 +17,7 @@
 useSeoMeta({
   title: 'Главная',
   ogTitle: 'Главная',
-  ogDescription: 'Даниил Витушкин - Vue / Nuxt',
+  ogDescription: 'danvitu - Vue / Nuxt',
   ogImage: '[og:image]',
   ogUrl: '[og:url]',
 })
