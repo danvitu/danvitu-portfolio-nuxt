@@ -1,11 +1,11 @@
 <template>
-  <div class="container mx-auto max-w-4xl p-2">
-    <header class="flex justify-between items-center mt-5">
+  <div class="container mx-auto px-4">
+    <header class="flex flex-wrap justify-between items-center mt-5">
       <div class="flex items-center md:space-x-12">
         <div class="p-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-xl">
           <NuxtLink to="/">
             <div class="flex items-center space-x-2">
-              <Icon name="mdi:face-man-outline" size="2rem" />
+              <Icon name="mdi:face-man-outline" size="1.5rem" />
               <span class="font-semibold font-mono">danvitu</span>
             </div>
           </NuxtLink>
@@ -13,7 +13,7 @@
       </div>
       <Menu />
     </header>
-    <main class="p-2 mt-10">
+    <main class="p-2 mt-10 mx-auto max-w-3xl">
       <slot />
     </main>
     <footer>
@@ -21,7 +21,7 @@
         class="flex flex-col items-center md:flex-row gap-2 justify-between border-t py-8 px-2 mt-12 text-gray-600 dark:text-gray-400">
         <div class="flex gap-1 items-center text-gray-500 ">
           <Icon name="mdi:copyright" size="1rem" />
-          <span>2024 Daniil Vitushkin</span>
+          <span>2024 danvitu</span>
         </div>
         <ul class="flex gap-4">
           <li><a href="https://github.com/danvitu" target="_blank">Github</a></li>
@@ -35,7 +35,7 @@
 
 <script setup>
 useHead({
-  titleTemplate: '%s - Даниил Витушкин',
+  titleTemplate: '%s - danvitu',
 })
 </script>
 

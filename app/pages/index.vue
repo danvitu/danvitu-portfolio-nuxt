@@ -1,5 +1,5 @@
 <template>
-  <article class="box-border prose dark:prose-invert ">
+  <article class="prose dark:prose-invert ">
     <h1 class="mb-0">Привет 👋, меня зовут Даниил </h1>
     <p>Я создаю веб-приложения и сайты на <strong>Vue / Nuxt</strong></p>
     <div
