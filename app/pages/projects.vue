@@ -5,7 +5,7 @@
       <p>Что-то пошло не так... Попробуйте снова</p>
       <p>{{ error }}</p>
     </section>
-    <section v-else class="">
+    <section v-else>
       <h1>Проекты</h1>
       <ProjectList :repos="repos" />
     </section>

@@ -1,29 +1,25 @@
 const repos = ref([
   {
     id: 1,
-    name: "Мой сайт-портфолио",
-    description: "Мой сайт-портфолио",
-    homepage: "/",
-    html_url: "https://github.com/danvitu/danvitu-portfoilio-nuxt",
+    name: "КПТ Ассистент (в разработке)",
+    description: "Заполнение опросника настроения и журнала настроения, используя метод КПТ",
+    tags: ["Vue", "Nuxt", "Supabase"]
   },
   {
     id: 2,
-    name: "КПТ Ассистент (в разработке)",
-    description: "Помощник npm",
+    name: "Погодное приложение",
+    description: "Узнать прогноз погоды в своем городе",
+    homepage: "https://incandescent-conkies-33be79.netlify.app/",
+    html_url: "https://github.com/danvitu/vue-weather-app",
+    tags: ["Vue"]
   },
   {
     id: 3,
-    name: "Weather App",
-    description: "Прогноз погоды",
-    homepage: "https://incandescent-conkies-33be79.netlify.app/",
-    html_url: "https://github.com/danvitu/vue-weather-app",
-  },
-  {
-    id: 4,
     name: "Vue Todos",
     description: "Менеджер задач",
     homepage: "https://splendid-croissant-781f7e.netlify.app/",
     html_url: "https://github.com/danvitu/vue-todos",
+    tags: ["Vue"]
   },
 ])
 

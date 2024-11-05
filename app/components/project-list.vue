@@ -5,9 +5,14 @@
       :key="repository.id">
       <div class="font-semibold">{{ repository.name }}</div>
       <p v-if="repository.description" class="text-sm">{{ repository.description }}</p>
-      <div class="flex gap-4 flex-wrap ">
+      <div class="flex gap-4 flex-wrap mb-2">
         <a v-if="repository.homepage" class="link" :href="repository.homepage" target="_blank">App</a>
         <a v-if="repository.html_url" class="link" :href="repository.html_url" target="_blank">Code</a>
+      </div>
+      <div class="flex gap-2 justify-end text-gray-500 dark:text-gray-300 ">
+        <span v-for="tag in repository.tags" class="text-xs border dark:border-gray-700 px-2 py-1 rounded-md">
+          <span>{{ tag }}</span>
+        </span>
       </div>
     </li>
   </ul>
