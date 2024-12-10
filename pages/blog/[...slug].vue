@@ -1,5 +1,5 @@
 <template>
-  <article class="prose dark:prose-invert max-w-none">
+  <article class="prose dark:prose-invert mx-auto">
     <ContentDoc>
       <template #not-found>
         <h1>Документ не найден (404)</h1>

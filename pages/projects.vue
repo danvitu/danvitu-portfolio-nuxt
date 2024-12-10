@@ -1,5 +1,5 @@
 <template>
-  <div class="prose dark:prose-invert">
+  <div class="prose dark:prose-invert mx-auto">
     <section v-if="status === 'pending'">Загрузка...</section>
     <section v-else-if="status === 'error'">
       <p>Что-то пошло не так... Попробуйте снова</p>
