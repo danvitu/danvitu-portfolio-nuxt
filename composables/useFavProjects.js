@@ -5,6 +5,7 @@ const repos = ref([
     description:
       "Заполнение опросника настроения и журнала настроения, используя метод КПТ",
     homepage: "https://nuxt-cbt-app.vercel.app",
+    html_url: "https://github.com/danvitu/nuxt-cbt-app",
     tags: ["Vue", "Nuxt", "Supabase"],
   },
   {
