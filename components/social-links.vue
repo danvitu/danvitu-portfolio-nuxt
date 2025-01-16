@@ -11,10 +11,14 @@
     <Icon name="logos:bluesky" />
     <p>Bluesky</p>
   </a>
+  <a href="https://www.threads.net/@danvitu9" class="social-link">
+    <Icon name="mingcute:threads-line" />
+    <p>Threads</p>
+  </a>
 </template>
 
 <style scoped>
 .social-link {
-  @apply flex gap-2 items-center rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 p-2
+  @apply flex gap-2 items-center rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 p-2;
 }
 </style>
