@@ -13,17 +13,9 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
   ],
 
-  content: {
-    highlight: {
-      theme: {
-        default: "catppuccin-macchiato",
-      },
-    },
-  },
-
   colorMode: {
     classSuffix: "",
   },
-  
+
   compatibilityDate: "2024-11-05",
-})
+});

@@ -22,7 +22,7 @@
       >
         <div class="flex gap-1 items-center text-gray-500">
           <Icon name="mdi:copyright" size="1rem" />
-          <span>2024 danvitu</span>
+          <span>2025 danvitu</span>
         </div>
       </nav>
     </footer>
