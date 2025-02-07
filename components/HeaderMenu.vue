@@ -2,8 +2,14 @@
   <nav>
     <ul class="flex flex-row md:gap-4 font-mono">
       <li>
-        <NuxtLink to="/uses" class="link">
-          <Icon name="mdi:laptop-chromebook" size="1.5rem" />
+        <NuxtLink
+          to="/uses"
+          class="link"
+        >
+          <Icon
+            name="mdi:laptop-chromebook"
+            size="1.5rem"
+          />
           <p>Uses</p>
         </NuxtLink>
       </li>

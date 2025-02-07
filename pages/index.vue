@@ -1,20 +1,24 @@
+<script setup></script>
+
 <template>
   <div class="mx-auto">
     <h1 class="mb-2 font-bold md:text-4xl text-2xl">
       Привет 👋, меня зовут Даниил
     </h1>
-    <div class="mb-4">Я создаю веб-приложения и сайты</div>
+    <div class="mb-4">
+      Я создаю веб-приложения и сайты
+    </div>
     <div
       class="grid grid-cols-2 md:grid-cols-4 gap-4 rounded-2xl p-2 mb-8 bg-gray-50 dark:bg-gray-800 dark:text-white"
     >
       <SocialLinks />
     </div>
-    <h2 class="text-xl font-semibold mb-4">Мои проекты</h2>
+    <h2 class="text-xl font-semibold mb-4">
+      Мои проекты
+    </h2>
     <ProjectList />
   </div>
 </template>
-
-<script setup></script>
 
 <style scoped>
 strong {
