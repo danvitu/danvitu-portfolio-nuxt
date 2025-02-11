@@ -49,7 +49,7 @@ const repos = ref([
           class="link"
           :href="repository.homepage"
           target="_blank"
-        >Link</a>
+        >App</a>
         <a
           v-if="repository.html_url"
           class="link"
