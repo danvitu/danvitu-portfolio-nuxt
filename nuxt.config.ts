@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/eslint',
   ],
+
   devtools: { enabled: true },
 
   app: {
@@ -17,10 +18,13 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+
   compatibilityDate: '2024-11-05',
+
   eslint: {
     config: {
       standalone: false, // <---
+      stylistic: true,
     },
   },
 })

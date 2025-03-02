@@ -1,4 +1,5 @@
-<script setup></script>
+<script setup>
+</script>
 
 <template>
   <div class="mx-auto">
@@ -10,9 +11,7 @@
       <div>🟢 Vue/Nuxt + Supabase/Directus</div>
       <div>🌐 Готов к новым проектам и совместной работе!</div>
     </div>
-    <div
-      class="grid grid-cols-2 md:grid-cols-4 gap-4 rounded-2xl p-2 mb-8 bg-gray-50 dark:bg-gray-800 dark:text-white"
-    >
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 rounded-2xl p-2 mb-8 bg-gray-50 dark:bg-gray-800 dark:text-white">
       <SocialLinks />
     </div>
     <h2 class="text-xl font-semibold mb-4">
