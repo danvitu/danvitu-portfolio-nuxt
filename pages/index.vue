@@ -6,8 +6,8 @@
       Привет 👋, меня зовут Даниил
     </h1>
     <div class="mb-8">
-      <div>🧑‍💻 Создаю веб-приложения и сайты</div>
-      <div>🟢 Vue / Nuxt + BaaS</div>
+      <div>🧑‍💻 Создаю веб-приложения и сайты </div>
+      <div>🟢 Vue/Nuxt + Supabase/Directus</div>
       <div>🌐 Готов к новым проектам и совместной работе!</div>
     </div>
     <div
